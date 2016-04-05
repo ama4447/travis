@@ -4,8 +4,7 @@ node_js:
   - 0.10.30
     
 before_script:
- # - npm link
- # - mkdir -p shippable/codecoverage
+
 
 after_success:
   - echo $TOTO
@@ -18,8 +17,3 @@ after_success:
   - git log --oneline
   - git remote set-url origin [https://github.com/ama4447/travis]
   - git push origin master
-#  - npm run coverage
-#  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
-#  - mocha test -R mocha-lcov-reporter  && 
-#  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose
-#  - cat ./coverage/lcov.info | codeclimate
