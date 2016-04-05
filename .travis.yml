@@ -10,8 +10,8 @@ before_script:
 after_success:
   - echo $TOTO
   - git remote -v
-  - git config --global user.email "ama.310@hotmail.com"
-  - git config --global user.name "ama4447"
+  - git config --global user.email "[ama.310@hotmail.com]"
+  - git config --global user.name "[ama4447]"
  - git checkout master
  - npm version patch
   - git commit -am "[skip ci] bump version"
